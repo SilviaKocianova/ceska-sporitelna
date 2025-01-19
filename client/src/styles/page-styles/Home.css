@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(200deg, #0c0c0c, #82c9ff, #7d97b3);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.custom-shape-divider-top-1737323669 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1737323669 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 323px;
+}
+
+.custom-shape-divider-top-1737323669 .shape-fill {
+    fill: #FFFFFF;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    color: #24527a;
+}
+
+.color-text {
+    color: #467dad;
+}

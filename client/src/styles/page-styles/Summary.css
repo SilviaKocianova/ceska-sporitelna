@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.submitted-information {
+    background-color: #ffffff;
+    width: 500px;
+    padding: 2em;
+    border-radius: 30px;
+    text-align: left;
+}

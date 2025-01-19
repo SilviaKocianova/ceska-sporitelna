@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useStore from '../store/store';
 import { validateForm } from '../utils/validation';
-import '../styles/Form.css';
+import '../styles/component-styles/Form.css';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +13,7 @@ const Form = () => {
     director: '',
   });
   const [errors, setErrors] = useState({});
+  const [shake, setShake] = useState(false);
   const navigate = useNavigate();
   const setCompanyData = useStore((state) => state.setCompanyData);
 
@@ -27,16 +28,19 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validateForm(formData);
+
     if (Object.keys(validationErrors).length === 0) {
       setCompanyData(formData);
       navigate('/summary');
     } else {
       setErrors(validationErrors);
+      setShake(true);
+      setTimeout(() => setShake(false), 1000); // Reset shake after animation
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-container">
+    <form onSubmit={handleSubmit} className={`form-container ${shake ? 'shake' : ''}`}>
       <div className="form-group">
         <label className="label">Company Name</label>
         <input
