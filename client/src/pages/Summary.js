@@ -7,12 +7,16 @@ const Summary = () => {
   const companyData = useStore(state => state.companyData);
   const navigate = useNavigate();
 
-  
+  // Načtení dat z localStorage při prvním načtení
   useEffect(() => {
-    if (!companyData.name) {
-      navigate('/');
+    const storedData = localStorage.getItem('companyData');
+
+    if (storedData) {
+      useStore.setState({ companyData: JSON.parse(storedData) });
+    } else {
+      navigate('/'); // Přesměrování na formulář, pokud data nejsou dostupná
     }
-  }, [companyData, navigate]);
+  }, [navigate]);
 
   return (
     <div>
