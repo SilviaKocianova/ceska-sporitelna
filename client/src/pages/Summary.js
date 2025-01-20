@@ -19,15 +19,17 @@ const Summary = () => {
   }, [navigate]);
 
   return (
-    <div>
+    <div className="summary-container">
       <h2>Thank you, {companyData.name}!</h2>
       <h3>Submitted data for your review:</h3>
+      <div className="center-wrapper">
       <div className="submitted-information">
         <p><strong>Name:</strong> {companyData.name}</p>
         <p><strong>IČO:</strong> {companyData.ico}</p>
         <p><strong>Address:</strong> {companyData.address}</p>
         <p><strong>Contact:</strong> {companyData.contact}</p>
         <p><strong>Director:</strong> {companyData.director}</p>
+      </div>
       </div>
     </div>
   );

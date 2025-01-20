@@ -2,6 +2,22 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.summary-container {
+    position: relative;
+    transform: translateY(-100%);
+    animation: slideIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -18,12 +34,21 @@ h3 {
     font-size: 1.5em;
 }
 
+
+.center-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    height: 25vh;  
+}
+
 .submitted-information {
     background-color: #ffffff;
     width: 500px;
     padding: 2em;
     border-radius: 30px;
     text-align: left;
+    position: absolute;
 }
 
 strong {

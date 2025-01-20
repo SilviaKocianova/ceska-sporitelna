@@ -4,7 +4,7 @@ import useStore from '../store/store';
 import { validateForm } from '../utils/validation';
 import '../styles/component-styles/Form.css';
 
-const API_URL = "http://localhost:5000/api/companies"; // Backend API
+const API_URL = "http://localhost:5000/api/companies";
 
 const Form = () => {
   const [formData, setFormData] = useState({

@@ -1,7 +1,9 @@
+/*GRADIENT ANIMATION ACROSS THE APP*/
+
 body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(200deg, #0c0c0c, #82c9ff, #7d97b3);
+    background: linear-gradient(200deg, #c7f5fe, #eab4f8, #f3f798);
     background-size: 400% 400%;
     animation: gradientAnimation 8s ease infinite;
 }
@@ -12,25 +14,27 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-.custom-shape-divider-top-1737323669 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+/*END OF GRADIENT ANIMATION ACROSS THE APP*/
+
+/*ANIMATION - FADE IN*/
+.home-container {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
 }
 
-.custom-shape-divider-top-1737323669 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 323px;
-}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
-.custom-shape-divider-top-1737323669 .shape-fill {
-    fill: #FFFFFF;
-}
+
+/*END OF ANIMATION FADE IN*/
+
+/*HEADERS STYLING*/
 
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
@@ -44,3 +48,5 @@ h1, h2, h3 {
 .color-text {
     color: #467dad;
 }
+
+/*END OF HEADERS STYLING*/
