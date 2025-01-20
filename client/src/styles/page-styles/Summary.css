@@ -1,3 +1,5 @@
+/*GENERAL STYLING + SLIDE IN ANIMATION*/
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -17,7 +19,10 @@ body {
     }
   }
 
+/*END OF GENERAL STYLING + ANIMATION*/
 
+
+/*HEADER STYLING*/
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -34,6 +39,20 @@ h3 {
     font-size: 1.5em;
 }
 
+strong {
+    color: rgb(28, 96, 125);
+
+}
+
+p {
+    color: rgb(109, 109, 109);
+    
+}
+
+
+/*END OF HEADER STYLING*/
+
+/*CONTAINER*/
 
 .center-wrapper {
     display: flex;
@@ -51,12 +70,6 @@ h3 {
     position: absolute;
 }
 
-strong {
-    color: rgb(28, 96, 125);
+/*END OF CONTAINER*/
 
-}
 
-p {
-    color: rgb(109, 109, 109);
-    
-}
