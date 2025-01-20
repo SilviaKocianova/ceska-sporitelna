@@ -25,3 +25,13 @@ h3 {
     border-radius: 30px;
     text-align: left;
 }
+
+strong {
+    color: rgb(28, 96, 125);
+
+}
+
+p {
+    color: rgb(109, 109, 109);
+    
+}

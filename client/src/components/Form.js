@@ -35,7 +35,7 @@ const Form = () => {
     } else {
       setErrors(validationErrors);
       setShake(true);
-      setTimeout(() => setShake(false), 1000); // Reset shake after animation
+      setTimeout(() => setShake(false), 1000); 
     }
   };
 
